@@ -1,0 +1,99 @@
+{
+  "version": 1,
+  "author": "Yasith Silva",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-breadboard-half", "id": "bb1", "top": -156.6, "left": -198.8, "attrs": {} },
+    {
+      "type": "wokwi-esp32-devkit-v1",
+      "id": "esp",
+      "top": 4.1,
+      "left": 149.87,
+      "rotate": 180,
+      "attrs": {}
+    },
+    { "type": "board-ssd1306", "id": "oled1", "top": 226.19, "left": -28.8, "attrs": {} },
+    {
+      "type": "wokwi-ky-040",
+      "id": "encoder1",
+      "top": -134.4,
+      "left": -212.9,
+      "rotate": 90,
+      "attrs": {}
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": -34.45,
+      "left": -9.6,
+      "attrs": { "value": "220" }
+    },
+    {
+      "type": "wokwi-led",
+      "id": "led1",
+      "top": -79.37,
+      "left": 34.04,
+      "attrs": { "color": "red" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r2",
+      "top": -24.55,
+      "left": -126.2,
+      "rotate": 180,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r3",
+      "top": -34.15,
+      "left": -135.8,
+      "rotate": 180,
+      "attrs": { "value": "1000" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r4",
+      "top": -14.95,
+      "left": -145.4,
+      "rotate": 180,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "esp:3V3", "bb1:bp.25", "red", [ "v0" ] ],
+    [ "esp:GND.1", "bb1:bn.25", "black", [ "h0" ] ],
+    [ "oled1:GND", "bb1:bn.16", "black", [ "v0" ] ],
+    [ "oled1:VCC", "bb1:bp.17", "red", [ "v0" ] ],
+    [ "esp:D22", "oled1:SCL", "gold", [ "h0" ] ],
+    [ "esp:D21", "oled1:SDA", "green", [ "h0" ] ],
+    [ "bb1:18b.j", "bb1:bn.15", "black", [ "v0" ] ],
+    [ "esp:D4", "bb1:25b.j", "blue", [ "h0" ] ],
+    [ "bb1:12b.j", "bb1:bp.10", "green", [ "v0" ] ],
+    [ "bb1:11b.j", "bb1:bp.9", "green", [ "v0" ] ],
+    [ "bb1:6b.j", "esp:D5", "gold", [ "v0" ] ],
+    [ "esp:D18", "bb1:5b.j", "green", [ "h0" ] ],
+    [ "esp:D19", "bb1:4b.j", "green", [ "h0" ] ],
+    [ "bb1:3b.j", "bb1:bp.2", "red", [ "v0" ] ],
+    [ "bb1:2b.j", "bb1:bn.1", "black", [ "v0" ] ],
+    [ "bb1:10b.j", "bb1:bp.8", "green", [ "v0" ] ],
+    [ "r1:1", "bb1:18b.g", "", [ "$bb" ] ],
+    [ "r1:2", "bb1:24b.g", "", [ "$bb" ] ],
+    [ "led1:A", "bb1:25b.f", "", [ "$bb" ] ],
+    [ "led1:C", "bb1:24b.f", "", [ "$bb" ] ],
+    [ "r2:1", "bb1:12b.h", "", [ "$bb" ] ],
+    [ "r2:2", "bb1:6b.h", "", [ "$bb" ] ],
+    [ "r3:1", "bb1:11b.g", "", [ "$bb" ] ],
+    [ "r3:2", "bb1:5b.g", "", [ "$bb" ] ],
+    [ "r4:1", "bb1:10b.i", "", [ "$bb" ] ],
+    [ "r4:2", "bb1:4b.i", "", [ "$bb" ] ],
+    [ "encoder1:CLK", "bb1:6b.f", "", [ "$bb" ] ],
+    [ "encoder1:DT", "bb1:5b.f", "", [ "$bb" ] ],
+    [ "encoder1:SW", "bb1:4b.f", "", [ "$bb" ] ],
+    [ "encoder1:VCC", "bb1:3b.f", "", [ "$bb" ] ],
+    [ "encoder1:GND", "bb1:2b.f", "", [ "$bb" ] ]
+  ],
+  "dependencies": {}
+}
