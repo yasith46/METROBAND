@@ -15,6 +15,3 @@ Demonstration of the project:<br><br>
         <img src="https://img.youtube.com/vi/N5GJq5FccDs/0.jpg" alt="Demonstration of the Final Product">
     </a>
 </div>
-<iframe width="420" height="315"
-src="https://www.youtube.com/watch?v=N5GJq5FccDs">
-</iframe>
