@@ -9,4 +9,9 @@
 <br>Above works were done by Yasith Silva ([@yasith46](https://github.com/yasith46)), Bimsara Nawarathne ([@bimsaranawa](https://github.com/bimsaranawa)), Isuranga Senavirathne ([@isuranga1](https://github.com/isuranga1)) and Julian Silva ([@JulianSilva2001](https://github.com/JulianSilva2001)).
 
 Demonstration of the project:<br><br>
-[![Demonstration of the Final Product](https://img.youtube.com/vi/N5GJq5FccDs/0.jpg)](https://www.youtube.com/watch?v=N5GJq5FccDs)
+<div align="center">
+    <h3>Demonstration of the project:</h3><br>
+    <a href="https://www.youtube.com/watch?v=N5GJq5FccDs" target="_blank">
+        <img src="https://img.youtube.com/vi/N5GJq5FccDs/0.jpg" alt="Demonstration of the Final Product">
+    </a>
+</div>
