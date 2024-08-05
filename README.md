@@ -1,7 +1,8 @@
 <div align="center">  
     <img height="200" src="./Documentation/EN1190 - Critical Analysis_ Metroband/logo.png">
     <h3>Department of Electronics and Telecommunications<br>University of Moratuwa</h3>
-    <h2> METROBAND - The Metronome Wristband</h2><br>Done in partial fulfillment of the requirements for the module <i>EN 1190 Engineering Design Project</i>
+    <h2> METROBAND - The Metronome Wristband</h2>
+    <br>Done in partial fulfillment of the requirements for the module <i>EN 1190 Engineering Design Project</i>
 </div>
 
 Aim of this project is to create an alternative to the traditional Metronome, with a digitally controlled vibrating wristband. This repository contains all the documentation, code, schematics, PCB designs, and simulations of the project.
