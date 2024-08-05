@@ -1,0 +1,48 @@
+{
+  "version": 1,
+  "author": "Yasith Silva",
+  "editor": "wokwi",
+  "parts": [
+    { "type": "wokwi-esp32-devkit-v1", "id": "esp", "top": 4.7, "left": 177.4, "attrs": {} },
+    {
+      "type": "wokwi-potentiometer",
+      "id": "pot1",
+      "top": 159.23,
+      "left": 27.86,
+      "rotate": 180,
+      "attrs": {}
+    },
+    { "type": "board-ssd1306", "id": "oled1", "top": 202.72, "left": 316.78, "attrs": {} },
+    {
+      "type": "wokwi-pushbutton",
+      "id": "btn1",
+      "top": 74.9,
+      "left": -97.31,
+      "attrs": { "color": "green" }
+    },
+    {
+      "type": "wokwi-resistor",
+      "id": "r1",
+      "top": 118.85,
+      "left": -14.84,
+      "rotate": 90,
+      "attrs": { "value": "1000" }
+    }
+  ],
+  "connections": [
+    [ "esp:TX0", "$serialMonitor:RX", "", [] ],
+    [ "esp:RX0", "$serialMonitor:TX", "", [] ],
+    [ "pot1:GND", "esp:GND.2", "black", [ "v0" ] ],
+    [ "pot1:VCC", "esp:VIN", "red", [ "v-43.56", "h57.01", "v31.36" ] ],
+    [ "esp:D34", "pot1:SIG", "green", [ "h0" ] ],
+    [ "oled1:GND", "esp:GND.1", "black", [ "v0" ] ],
+    [ "oled1:VCC", "esp:3V3", "red", [ "v0" ] ],
+    [ "esp:D22", "oled1:SCL", "green", [ "h0" ] ],
+    [ "esp:D21", "oled1:SDA", "green", [ "h0" ] ],
+    [ "esp:D12", "btn1:1.r", "gold", [ "h-39.38", "v-23.74" ] ],
+    [ "btn1:1.r", "r1:1", "gold", [ "v0.37", "h44.82" ] ],
+    [ "r1:2", "esp:GND.2", "black", [ "h-0.29", "v118.66", "h136.56", "v-118.61" ] ],
+    [ "btn1:2.r", "esp:3V3", "red", [ "h20.29", "v183.44", "h315.14", "v-112.32" ] ]
+  ],
+  "dependencies": {}
+}
