@@ -1,1 +1,1 @@
-This directory contains all the documentation of the project
+This directory contains all the documentation of the project. Please note that the Project Proposal was made before the commencement of the project, and due to this reason the figures can differ. The figures in the Project Report are the accurate final figures.
